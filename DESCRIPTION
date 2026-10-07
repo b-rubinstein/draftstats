@@ -1,0 +1,17 @@
+Package: draftstats
+Type: Package
+Title: Analyzing NBA Career Performance Relative to Draft Position
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Brianna", "Rubinstein",
+      email = "briannarubinstein2027@u.northwestern.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Provides tools to use data from NBA players from their college careers through the NBA to see if 
+  their draft position can predict trends in performance. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.0
