@@ -1,0 +1,32 @@
+#' NBA Player Statistics and Draft Data
+#'
+#' A dataset of NBA data from 1996 to 2022 containing demographic information,
+#'  draft information, and NBA statistics.
+#'
+#' @format ## `nba_players`
+#' A data frame with 12,844 rows and 22 columns:
+#' \describe{
+#'   \item{player_name}{Player's name}
+#'   \item{team_abbreviation}{Team that player was on at the end of the season}
+#'   \item{age}{Age of player}
+#'   \item{player_height}{Height of player (cm)}
+#'   \item{player_weight}{Weight of player (kg)}
+#'   \item{college}{Name of college player attended}
+#'   \item{country}{Country player was born in}
+#'   \item{draft_year}{Year player was drafted}
+#'   \item{draft_round}{Draft round player was picked}
+#'   \item{draft_number}{Number player was drafted}
+#'   \item{gp}{Number of games played throughout the season}
+#'   \item{pts}{Average number of points scores}
+#'   \item{reb}{Average number of rebounds}
+#'   \item{ast}{Number of assists}
+#'   \item{net_rating}{Team's point differential per 100 possessions while the player is on the court}
+#'   \item{oreb_pct}{Percentage of offensive rebounds}
+#'   \item{dreb_pct}{Percentage of defensive rebounds}
+#'   \item{usg_pct}{Percentage of team plays used by the player while he was on the floor (FGA + Possession Ending FTA + TO) / POSS)}
+#'   \item{ts_pct}{Measure of the player's shooting efficiency that takes into account free throws, 2 and 3 point shots (PTS / (2*(FGA + 0.44 * FTA)))}
+#'   \item{ast_pct}{Percentage of teammate fgs player assisted}
+#'   \item{season}{NBA season}
+#' }
+#' @source <https://www.kaggle.com/datasets/justinas/nba-players-data>
+"nba_players"
