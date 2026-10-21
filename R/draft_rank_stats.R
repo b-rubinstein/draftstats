@@ -24,7 +24,7 @@ draft_rank_stats <- function(data, min_pick, max_pick, measure) {
     stop("pick must be greater than zero")
   }
 
-  subset_df <- data[data$pick >= min_pick & data$pick <= max_pick, ]
+  subset_df <- data[data$draft_number >= min_pick & data$draft_number <= max_pick, ]
 
   if(nrow(subset_df)==0){
     stop("no players in range found")
