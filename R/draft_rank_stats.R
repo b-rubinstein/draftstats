@@ -12,6 +12,10 @@
 
 draft_rank_stats <- function(data, min_pick, max_pick, measure) {
 
+  if(nrow(data)==0){
+    stop("dataframe is empty")
+  }
+
   if(min_pick > max_pick){
     stop("minimum pick number cannot be greater than maximum pick number")
   }
@@ -28,6 +32,14 @@ draft_rank_stats <- function(data, min_pick, max_pick, measure) {
 
   if(nrow(subset_df)==0){
     stop("no players in range found")
+  }
+
+  if(!measure %in% names(data)){
+    stop("invalid metric")
+  }
+
+  if(!is.numeric(data[[measure]])){
+    stop("measure column must be numeric")
   }
 
   ranked_df <- data.frame(
