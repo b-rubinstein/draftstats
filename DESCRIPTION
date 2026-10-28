@@ -9,11 +9,13 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Provides tools to use data from NBA players from their college careers through the NBA to see if 
-  their draft position can predict trends in performance. 
+Description: Provides tools to use data from NBA players from their rookie season
+  throughout their NBA careers to see if their draft position can predict trends 
+  in performance. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/b-rubinstein/draftstats
 Config/roxygen2/version: 8.1.0
 Depends: 
     R (>= 3.5)
