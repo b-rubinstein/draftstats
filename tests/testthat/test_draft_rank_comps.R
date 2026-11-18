@@ -12,5 +12,5 @@ test_that("metrics being computed properly", {
 
 test_that("draft stats errors continue here", {
   data <- data.frame(draft_number = 1:20, pts = 1:20)
-  expect_error(draft_rank_comps(data, 10, 20, 40, 30))
+  expect_error(draft_rank_comps(data, 10, 20, 40, 30, "pts"))
 })
