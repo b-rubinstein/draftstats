@@ -1,7 +1,8 @@
 # NBA Player Statistics and Draft Data
 
 A dataset of NBA data from 1996 to 2022 containing demographic
-information, draft information, and NBA statistics.
+information, draft information, and NBA statistics with a different row
+for each year a player was in the NBA.
 
 ## Usage
 
