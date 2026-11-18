@@ -1,7 +1,8 @@
 #' NBA Player Statistics and Draft Data
 #'
 #' A dataset of NBA data from 1996 to 2022 containing demographic information,
-#'  draft information, and NBA statistics.
+#'  draft information, and NBA statistics with a different row for
+#'  each year a player was in the NBA.
 #'
 #' @format ## `nba_players`
 #' A data frame with 12,844 rows and 21 columns:
@@ -30,3 +31,24 @@
 #' }
 #' @source <https://www.kaggle.com/datasets/justinas/nba-players-data>
 "nba_players"
+
+#' NBA Draft Data and Career Per-Game Statistics
+#'
+#' A dataset of NBA data from 1989 to 2021, with one row per drafted player and their
+#' career per-game statistics.
+#'
+#' @format ## `nba_draft`
+#' A data frame with 1,922 rows and 9 columns:
+#' \describe{
+#'   \item{player_name}{Player's name}
+#'   \item{team_abbreviation}{Team that drafted the player}
+#'   \item{college}{Name of college player attended}
+#'   \item{draft_year}{Year player was drafted}
+#'   \item{draft_number}{Overall number player was drafted}
+#'   \item{gp}{Number of games played throughout the player's career}
+#'   \item{pts}{Career average number of points scored per game}
+#'   \item{reb}{Career average number of rebounds per game}
+#'   \item{ast}{Career average number of assists per game}
+#' }
+#' @source <https://www.kaggle.com/datasets/mattop/nba-draft-basketball-player-data-19892021>
+"nba_draft"
