@@ -4,7 +4,7 @@
 #'  draft information, and NBA statistics.
 #'
 #' @format ## `nba_players`
-#' A data frame with 12,844 rows and 22 columns:
+#' A data frame with 12,844 rows and 21 columns:
 #' \describe{
 #'   \item{player_name}{Player's name}
 #'   \item{team_abbreviation}{Team that player was on at the end of the season}
@@ -13,9 +13,9 @@
 #'   \item{player_weight}{Weight of player (kg)}
 #'   \item{college}{Name of college player attended}
 #'   \item{country}{Country player was born in}
-#'   \item{draft_year}{Year player was drafted}
-#'   \item{draft_round}{Draft round player was picked}
-#'   \item{draft_number}{Number player was drafted}
+#'   \item{draft_year}{Year player was drafted, NA if undrafted}
+#'   \item{draft_round}{Draft round player was picked, NA if undrafted}
+#'   \item{draft_number}{OVerall number player was drafted, NA if undrafted}
 #'   \item{gp}{Number of games played throughout the season}
 #'   \item{pts}{Average number of points scores}
 #'   \item{reb}{Average number of rebounds}
