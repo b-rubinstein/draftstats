@@ -11,7 +11,7 @@ nba_players
 
 ## Format
 
-\## \`nba_players\` A data frame with 12,844 rows and 22 columns:
+\## \`nba_players\` A data frame with 12,844 rows and 21 columns:
 
 - player_name:
 
@@ -43,15 +43,15 @@ nba_players
 
 - draft_year:
 
-  Year player was drafted
+  Year player was drafted, NA if undrafted
 
 - draft_round:
 
-  Draft round player was picked
+  Draft round player was picked, NA if undrafted
 
 - draft_number:
 
-  Number player was drafted
+  OVerall number player was drafted, NA if undrafted
 
 - gp:
 
