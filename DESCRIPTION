@@ -15,7 +15,7 @@ Description: Provides tools to use data from NBA players from their rookie seaso
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/b-rubinstein/draftstats
+URL: https://github.com/b-rubinstein/draftstats, https://b-rubinstein.github.io/draftstats/
 Config/roxygen2/version: 8.1.0
 Depends: 
     R (>= 3.5)
