@@ -40,3 +40,9 @@ test_that("metrics being computed properly", {
   expect_equal(results$Avg, mean(1:20))
   expect_equal(results$Median, median(1:20))
 })
+
+test_that("NA values are ignored", {
+  data <- data.frame(draft_number = 1:10, pts = c(1:9, NA))
+  results <- draft_rank_stats(data, 1, 10, "pts")
+  expect_equal(results$Avg, mean(1:9))
+})

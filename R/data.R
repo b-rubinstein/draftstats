@@ -15,7 +15,7 @@
 #'   \item{country}{Country player was born in}
 #'   \item{draft_year}{Year player was drafted, NA if undrafted}
 #'   \item{draft_round}{Draft round player was picked, NA if undrafted}
-#'   \item{draft_number}{OVerall number player was drafted, NA if undrafted}
+#'   \item{draft_number}{Overall number player was drafted, NA if undrafted}
 #'   \item{gp}{Number of games played throughout the season}
 #'   \item{pts}{Average number of points scores}
 #'   \item{reb}{Average number of rebounds}

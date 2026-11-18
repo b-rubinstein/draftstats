@@ -12,41 +12,47 @@
 
 draft_rank_stats <- function(data, min_pick, max_pick, measure) {
 
-  if(nrow(data)==0){
-    stop("dataframe is empty")
+  if(!is.data.frame(data) || nrow(data)==0){
+    stop("data must be a nonempty dataframe")
   }
 
-  if(min_pick > max_pick){
-    stop("minimum pick number cannot be greater than maximum pick number")
-  }
-
-  if(!is.numeric(min_pick) || !is.numeric(max_pick)){
-    stop("pick numbers must be numeric")
-  }
-
-  if(min_pick <= 0 || max_pick<=0){
-    stop("pick must be greater than zero")
-  }
-
-  subset_df <- data[data$draft_number >= min_pick & data$draft_number <= max_pick, ]
-
-  if(nrow(subset_df)==0){
-    stop("no players in range found")
+  if(!"draft_number" %in% names(data)){
+    stop("data must contain a draft_number column")
   }
 
   if(!measure %in% names(data)){
     stop("invalid metric")
   }
 
-  if(!is.numeric(data[[measure]])){
-    stop("measure column must be numeric")
+
+  if(!is.numeric(data$draft_number)|| !is.numeric(data[[measure]]) ||
+     !is.numeric(min_pick) || !is.numeric(max_pick)){
+    stop("draft number, measure, min_pick, and
+         max_pick values must be numeric")
   }
+
+  if(min_pick > max_pick){
+    stop("minimum pick number cannot be greater than maximum pick number")
+  }
+
+  if(min_pick <= 0 || max_pick<=0){
+    stop("pick must be greater than zero")
+  }
+
+  subset_df <- data[!is.na(data$draft_number) & data$draft_number >= min_pick & data$draft_number <= max_pick, ]
+
+  if(nrow(subset_df)==0){
+    stop("no players in range found")
+  }
+
+
+
 
   ranked_df <- data.frame(
     "# Players" = nrow(subset_df),
     "Measure" = measure,
-    "Avg" = mean(subset_df[[measure]]),
-    "Median" = stats::median(subset_df[[measure]])
+    "Avg" = mean(subset_df[[measure]], na.rm = TRUE),
+    "Median" = stats::median(subset_df[[measure]], na.rm = TRUE)
   )
 
   return(ranked_df)
