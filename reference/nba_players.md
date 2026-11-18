@@ -51,7 +51,7 @@ nba_players
 
 - draft_number:
 
-  OVerall number player was drafted, NA if undrafted
+  Overall number player was drafted, NA if undrafted
 
 - gp:
 
