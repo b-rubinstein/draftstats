@@ -12,3 +12,5 @@
   : NBA Draft Data and Career Per-Game Statistics
 - [`nba_players`](https://b-rubinstein.github.io/draftstats/reference/nba_players.md)
   : NBA Player Statistics and Draft Data
+- [`wnba_draft`](https://b-rubinstein.github.io/draftstats/reference/wnba_draft.md)
+  : WNBA Draft Data and Career Per-Game Statistics
