@@ -1,4 +1,4 @@
-\#draftstats
+### draftstats
 
 draftstats is a tool to analyze whether an NBA player’s draft position
 is reflective of their performance throughout their career in the
