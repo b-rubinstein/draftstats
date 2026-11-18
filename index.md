@@ -35,9 +35,9 @@ Install the package using
 devtools::install_github(“b-rubinstein/draftstats”) and
 library(draftstats)
 
-Download NBA Players dataset and convert any statistic or draft number
-columns into numeric…
+The nba_players dataset is included with the package, so calling
+library(draftstats) is sufficient.
 
-Example function uses: draft_rank_stats(drafted_players, min_pick = 1,
-max_pick = 10, measure = “pts”) draft_rank_comps(drafted_players, 1, 10,
-11, 20, measure = “pts”)
+Example function uses: draft_rank_stats(nba_players, min_pick = 1,
+max_pick = 10, measure = “pts”) draft_rank_comps(nba_players, 1, 10, 11,
+20, measure = “pts”)
