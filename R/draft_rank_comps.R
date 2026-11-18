@@ -22,10 +22,10 @@ draft_rank_comps<- function(data, min_pick1, max_pick1, min_pick2, max_pick2, me
 
   comparison <- data.frame(
     "Range" = c(paste0(min_pick1, "-", max_pick1), paste0(min_pick2, "-", max_pick2)),
-    "Avgs" = c(first_ranks$Avg, second_ranks$Avg),
-    "Medians" = c(first_ranks$Median, second_ranks$Median),
-    "Difference btwn Avg" = diff_avg,
-    "Difference btwn Median" = diff_medians
+    "Avg" = c(first_ranks$Avg, second_ranks$Avg),
+    "Median" = c(first_ranks$Median, second_ranks$Median),
+    "Diff_Avg" = diff_avg,
+    "Diff_Median" = diff_medians
   )
 
   return (comparison)

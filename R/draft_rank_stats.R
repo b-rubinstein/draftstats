@@ -49,7 +49,7 @@ draft_rank_stats <- function(data, min_pick, max_pick, measure) {
 
 
   ranked_df <- data.frame(
-    "# Players" = nrow(subset_df),
+    "Num_Players" = nrow(subset_df),
     "Measure" = measure,
     "Avg" = mean(subset_df[[measure]], na.rm = TRUE),
     "Median" = stats::median(subset_df[[measure]], na.rm = TRUE)
