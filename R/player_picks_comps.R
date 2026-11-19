@@ -31,6 +31,9 @@ player_picks_comps<- function(data, player_name, measure, window = 5) {
     stop("invalid metric")
   }
 
+  if(!is.numeric(data[[measure]])){
+    stop("measure must be numeric")
+  }
 
   if(!is.numeric(window) || window <= 0 || length(window) != 1){
     stop("window length must be greater than 0 and a single digit number")
@@ -62,6 +65,7 @@ player_picks_comps<- function(data, player_name, measure, window = 5) {
   player_comp <- data.frame(
     "Player" = player_name,
     "Range" = paste0(min_range, "-", max_range),
+    "Measure" = measure,
     "Player_stat" = player,
     "Avg" = draftrank$Avg,
     "Median" = draftrank$Median,
