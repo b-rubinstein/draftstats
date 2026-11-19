@@ -56,6 +56,9 @@ max_pick = 10, measure = “pts”) draft_rank_comps(nba_players, 1, 10, 11,
   : NBA Draft Data and Career Per-Game Statistics
 - [`nba_players`](https://b-rubinstein.github.io/draftstats/reference/nba_players.md)
   : NBA Player Statistics and Draft Data
+- [`player_picks_comps()`](https://b-rubinstein.github.io/draftstats/reference/player_picks_comps.md)
+  : Comparing a player's performance on a specific measure to their
+  draft range
 - [`wnba_draft`](https://b-rubinstein.github.io/draftstats/reference/wnba_draft.md)
   : WNBA Draft Data and Career Per-Game Statistics
 
