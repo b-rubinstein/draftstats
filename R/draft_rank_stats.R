@@ -6,7 +6,13 @@
 #' @param max_pick Highest pick number to include
 #' @param measure Statistics measure (points, rebounds, minutes, assists, etc)
 #'
-#' @returns A dataframe with the Average and Median statistic for the given draft range
+#' @returns A dataframe with the Average and Median statistic for all players in the given draft range
+#'
+#' @examples
+#' # draft_rank_stats(nba_players, 1, 10, "pts")
+#' # draft_rank_stats(nba_draft, 1, 5, "reb")
+#' # draft_rank_stats(wnba_draft, 5, 15, "ast")
+#'
 #' @export
 
 

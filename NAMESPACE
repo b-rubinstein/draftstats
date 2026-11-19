@@ -2,3 +2,4 @@
 
 export(draft_rank_comps)
 export(draft_rank_stats)
+export(player_picks_comps)

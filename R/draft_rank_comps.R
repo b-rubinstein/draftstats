@@ -8,8 +8,14 @@
 #' @param max_pick2 Highest pick number to include in range 2
 #' @param measure Statistics measure (points, rebounds, minutes, assists, etc) to compare
 #'
-#' @returns A dataframe with the Average and Median statistic for each given draft range and
+#' @returns A dataframe with the Average and Median statistic for all players in each given draft range and
 #'  the difference between them
+#'
+#' @examples
+#' # draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")
+#' # draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")
+#' # draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")
+#'
 #' @export
 
 draft_rank_comps<- function(data, min_pick1, max_pick1, min_pick2, max_pick2, measure) {
