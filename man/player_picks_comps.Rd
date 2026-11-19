@@ -23,9 +23,9 @@ A dataframe with the selected player's statistic and average and median values o
 Comparing a player's performance on a specific measure to their draft range
 }
 \examples{
-# player_picks_comps(nba_players, "Michael Jordan", "pts", 3)
-# player_picks_comps(wnba_draft, "Breanna Stweart", "pts")
-# player_picks_comps(nba_draft, "Kobe Bryant", "reb", 2)
+player_picks_comps(nba_players, "Michael Jordan", "pts", 3)
+player_picks_comps(wnba_draft, "Breanna Stewart", "pts")
+player_picks_comps(nba_draft, "Kobe Bryant", "reb", 2)
 
 
 }

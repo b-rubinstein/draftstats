@@ -27,8 +27,8 @@ A dataframe with the Average and Median statistic for all players in each given 
 Comparing a specific measure of performance between two draft ranges by calling draft_rank_stats function
 }
 \examples{
-# draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")
-# draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")
-# draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")
+draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")
+draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")
+draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")
 
 }

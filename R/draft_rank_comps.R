@@ -12,9 +12,9 @@
 #'  the difference between them
 #'
 #' @examples
-#' # draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")
-#' # draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")
-#' # draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")
+#' draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")
+#' draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")
+#' draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")
 #'
 #' @export
 

@@ -10,9 +10,9 @@
 #'  and the differences between them
 #'
 #' @examples
-#' # player_picks_comps(nba_players, "Michael Jordan", "pts", 3)
-#' # player_picks_comps(wnba_draft, "Breanna Stweart", "pts")
-#' # player_picks_comps(nba_draft, "Kobe Bryant", "reb", 2)
+#' player_picks_comps(nba_players, "Michael Jordan", "pts", 3)
+#' player_picks_comps(wnba_draft, "Breanna Stewart", "pts")
+#' player_picks_comps(nba_draft, "Kobe Bryant", "reb", 2)
 #'
 #'
 #' @export

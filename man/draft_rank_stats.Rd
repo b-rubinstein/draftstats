@@ -16,14 +16,15 @@ draft_rank_stats(data, min_pick, max_pick, measure)
 \item{measure}{Statistics measure (points, rebounds, minutes, assists, etc)}
 }
 \value{
-A dataframe with the Average and Median statistic for all players in the given draft range
+A dataframe with the total number of players in the given range,
+along with the Average and Median statistic for those players
 }
 \description{
 Summarizing a specific measure of performance for all players in a given draft range
 }
 \examples{
-# draft_rank_stats(nba_players, 1, 10, "pts")
-# draft_rank_stats(nba_draft, 1, 5, "reb")
-# draft_rank_stats(wnba_draft, 5, 15, "ast")
+draft_rank_stats(nba_players, 1, 10, "pts")
+draft_rank_stats(nba_draft, 1, 5, "reb")
+draft_rank_stats(wnba_draft, 5, 15, "ast")
 
 }
