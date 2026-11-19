@@ -63,14 +63,21 @@
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A dataframe with the Average and Median statistic for all players in the given draft range</p>
+    <p>A dataframe with the total number of players in the given range,
+along with the Average and Median statistic for those players</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># draft_rank_stats(nba_players, 1, 10, "pts")</span></span></span>
-<span class="r-in"><span><span class="co"># draft_rank_stats(nba_draft, 1, 5, "reb")</span></span></span>
-<span class="r-in"><span><span class="co"># draft_rank_stats(wnba_draft, 5, 15, "ast")</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">draft_rank_stats</span><span class="op">(</span><span class="va">nba_players</span>, <span class="fl">1</span>, <span class="fl">10</span>, <span class="st">"pts"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Num_Players Measure      Avg Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        3198     pts 12.44368   11.7</span>
+<span class="r-in"><span><span class="fu">draft_rank_stats</span><span class="op">(</span><span class="va">nba_draft</span>, <span class="fl">1</span>, <span class="fl">5</span>, <span class="st">"reb"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Num_Players Measure      Avg Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1         165     reb 5.637576    5.1</span>
+<span class="r-in"><span><span class="fu">draft_rank_stats</span><span class="op">(</span><span class="va">wnba_draft</span>, <span class="fl">5</span>, <span class="fl">15</span>, <span class="st">"ast"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Num_Players Measure      Avg Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1         286     ast 1.233208      1</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

@@ -29,13 +29,19 @@ draft_rank_stats(data, min_pick, max_pick, measure)
 
 ## Value
 
-A dataframe with the Average and Median statistic for all players in the
-given draft range
+A dataframe with the total number of players in the given range, along
+with the Average and Median statistic for those players
 
 ## Examples
 
 ``` r
-# draft_rank_stats(nba_players, 1, 10, "pts")
-# draft_rank_stats(nba_draft, 1, 5, "reb")
-# draft_rank_stats(wnba_draft, 5, 15, "ast")
+draft_rank_stats(nba_players, 1, 10, "pts")
+#>   Num_Players Measure      Avg Median
+#> 1        3198     pts 12.44368   11.7
+draft_rank_stats(nba_draft, 1, 5, "reb")
+#>   Num_Players Measure      Avg Median
+#> 1         165     reb 5.637576    5.1
+draft_rank_stats(wnba_draft, 5, 15, "ast")
+#>   Num_Players Measure      Avg Median
+#> 1         286     ast 1.233208      1
 ```

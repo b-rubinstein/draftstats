@@ -77,9 +77,18 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")</span></span></span>
-<span class="r-in"><span><span class="co"># draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")</span></span></span>
-<span class="r-in"><span><span class="co"># draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">draft_rank_comps</span><span class="op">(</span><span class="va">nba_players</span>, <span class="fl">1</span>, <span class="fl">10</span>, <span class="fl">11</span>, <span class="fl">20</span>, <span class="st">"pts"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Range      Avg Median Diff_Avg Diff_Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1  1-10 12.44368   11.7 3.546583           4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 11-20  8.89710    7.7 3.546583           4</span>
+<span class="r-in"><span><span class="fu">draft_rank_comps</span><span class="op">(</span><span class="va">wnba_draft</span>, <span class="fl">5</span>, <span class="fl">10</span>, <span class="fl">11</span>, <span class="fl">15</span>, <span class="st">"reb"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Range      Avg Median  Diff_Avg Diff_Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1  5-10 2.993333    2.7 0.7176812         0.7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 11-15 2.275652    2.0 0.7176812         0.7</span>
+<span class="r-in"><span><span class="fu">draft_rank_comps</span><span class="op">(</span><span class="va">nba_draft</span>, <span class="fl">10</span>, <span class="fl">20</span>, <span class="fl">21</span>, <span class="fl">30</span>, <span class="st">"ast"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Range      Avg Median  Diff_Avg Diff_Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 10-20 1.671468    1.2 0.2120342         0.2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 21-30 1.459434    1.0 0.2120342         0.2</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
