@@ -31,7 +31,7 @@ test_that("error when players share a name", {
 test_that("error when seasons are the same", {
   data <- data.frame(player_name = c("player", "player"), season = c("2000-01", "2000-01"), pts = c(10, 15),
                      draft_year = c(1999, 1999))
-  expect_error(player_year_comps(data, "player", "2000-01", "2001-02", "pts"))
+  expect_error(player_year_comps(data, "player", "2000-01", "2000-01", "pts"))
 })
 
 test_that("error when player did not play in a season", {
