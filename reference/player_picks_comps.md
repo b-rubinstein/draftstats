@@ -39,13 +39,15 @@ between them
 
 ``` r
 player_picks_comps(nba_players, "Michael Jordan", "pts", 3)
-#>           Player Range Player_stat      Avg Median Diff_Avg Diff_Median
-#> 1 Michael Jordan   1-6        25.3 13.52762     13 11.77238        12.3
+#>           Player Range Measure Player_stat      Avg Median Diff_Avg Diff_Median
+#> 1 Michael Jordan   1-6     pts        25.3 13.52762     13 11.77238        12.3
 player_picks_comps(wnba_draft, "Breanna Stewart", "pts")
-#>            Player Range Player_stat      Avg Median Diff_Avg Diff_Median
-#> 1 Breanna Stewart   1-6        20.3 9.466452    9.1 10.83355        11.2
+#>            Player Range Measure Player_stat      Avg Median Diff_Avg
+#> 1 Breanna Stewart   1-6     pts        20.3 9.466452    9.1 10.83355
+#>   Diff_Median
+#> 1        11.2
 player_picks_comps(nba_draft, "Kobe Bryant", "reb", 2)
-#>        Player Range Player_stat      Avg Median Diff_Avg Diff_Median
-#> 1 Kobe Bryant 11-15         5.2 3.669325    3.4 1.530675         1.8
+#>        Player Range Measure Player_stat      Avg Median Diff_Avg Diff_Median
+#> 1 Kobe Bryant 11-15     reb         5.2 3.669325    3.4 1.530675         1.8
 
 ```

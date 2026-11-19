@@ -15,5 +15,7 @@
 - [`player_picks_comps()`](https://b-rubinstein.github.io/draftstats/reference/player_picks_comps.md)
   : Comparing a player's performance on a specific measure to their
   draft range
+- [`player_year_comps()`](https://b-rubinstein.github.io/draftstats/reference/player_year_comps.md)
+  : Comparing a player's performance between two seasons
 - [`wnba_draft`](https://b-rubinstein.github.io/draftstats/reference/wnba_draft.md)
   : WNBA Draft Data and Career Per-Game Statistics

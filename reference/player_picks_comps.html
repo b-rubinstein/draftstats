@@ -70,14 +70,16 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">player_picks_comps</span><span class="op">(</span><span class="va">nba_players</span>, <span class="st">"Michael Jordan"</span>, <span class="st">"pts"</span>, <span class="fl">3</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           Player Range Player_stat      Avg Median Diff_Avg Diff_Median</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Michael Jordan   1-6        25.3 13.52762     13 11.77238        12.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           Player Range Measure Player_stat      Avg Median Diff_Avg Diff_Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Michael Jordan   1-6     pts        25.3 13.52762     13 11.77238        12.3</span>
 <span class="r-in"><span><span class="fu">player_picks_comps</span><span class="op">(</span><span class="va">wnba_draft</span>, <span class="st">"Breanna Stewart"</span>, <span class="st">"pts"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            Player Range Player_stat      Avg Median Diff_Avg Diff_Median</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Breanna Stewart   1-6        20.3 9.466452    9.1 10.83355        11.2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            Player Range Measure Player_stat      Avg Median Diff_Avg</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Breanna Stewart   1-6     pts        20.3 9.466452    9.1 10.83355</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Diff_Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        11.2</span>
 <span class="r-in"><span><span class="fu">player_picks_comps</span><span class="op">(</span><span class="va">nba_draft</span>, <span class="st">"Kobe Bryant"</span>, <span class="st">"reb"</span>, <span class="fl">2</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        Player Range Player_stat      Avg Median Diff_Avg Diff_Median</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Kobe Bryant 11-15         5.2 3.669325    3.4 1.530675         1.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        Player Range Measure Player_stat      Avg Median Diff_Avg Diff_Median</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Kobe Bryant 11-15     reb         5.2 3.669325    3.4 1.530675         1.8</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>

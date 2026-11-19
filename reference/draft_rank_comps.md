@@ -45,15 +45,15 @@ each given draft range and the difference between them
 
 ``` r
 draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")
-#>   Range      Avg Median Diff_Avg Diff_Median
-#> 1  1-10 12.44368   11.7 3.546583           4
-#> 2 11-20  8.89710    7.7 3.546583           4
+#>   Range Measure      Avg Median Diff_Avg Diff_Median
+#> 1  1-10     pts 12.44368   11.7 3.546583           4
+#> 2 11-20     pts  8.89710    7.7 3.546583           4
 draft_rank_comps(wnba_draft, 5, 10, 11, 15, "reb")
-#>   Range      Avg Median  Diff_Avg Diff_Median
-#> 1  5-10 2.993333    2.7 0.7176812         0.7
-#> 2 11-15 2.275652    2.0 0.7176812         0.7
+#>   Range Measure      Avg Median  Diff_Avg Diff_Median
+#> 1  5-10     reb 2.993333    2.7 0.7176812         0.7
+#> 2 11-15     reb 2.275652    2.0 0.7176812         0.7
 draft_rank_comps(nba_draft, 10, 20, 21, 30, "ast")
-#>   Range      Avg Median  Diff_Avg Diff_Median
-#> 1 10-20 1.671468    1.2 0.2120342         0.2
-#> 2 21-30 1.459434    1.0 0.2120342         0.2
+#>   Range Measure      Avg Median  Diff_Avg Diff_Median
+#> 1 10-20     ast 1.671468    1.2 0.2120342         0.2
+#> 2 21-30     ast 1.459434    1.0 0.2120342         0.2
 ```
