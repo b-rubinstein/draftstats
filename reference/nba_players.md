@@ -1,8 +1,9 @@
 # NBA Player Statistics and Draft Data
 
-A dataset of NBA data from 1996 to 2022 containing demographic
-information, draft information, and NBA statistics with a different row
-for each year a player was in the NBA.
+A dataset of NBA player statistics from the 1996-97 to to 2022-23
+seasons, containing demographic information, draft information, and NBA
+season statistics. There is one row per player, per year they were
+active in the NBA. Undrafted players draft_number is listed as 'NA'.
 
 ## Usage
 
@@ -44,7 +45,7 @@ nba_players
 
 - draft_year:
 
-  Year player was drafted, NA if undrafted
+  Year player was drafted
 
 - draft_round:
 
@@ -60,7 +61,7 @@ nba_players
 
 - pts:
 
-  Average number of points scores
+  Average number of points scored
 
 - reb:
 
@@ -68,7 +69,7 @@ nba_players
 
 - ast:
 
-  Number of assists
+  Average number of assists
 
 - net_rating:
 
@@ -77,11 +78,13 @@ nba_players
 
 - oreb_pct:
 
-  Percentage of offensive rebounds
+  Percentage of available offensive rebounds the player grabbed while he
+  was on the floor
 
 - dreb_pct:
 
-  Percentage of defensive rebounds
+  Percentage of available defensive rebounds the player grabbed while he
+  was on the floor
 
 - usg_pct:
 
@@ -95,7 +98,7 @@ nba_players
 
 - ast_pct:
 
-  Percentage of teammate fgs player assisted
+  Percentage of teammate fgs player assisted while he was on the floor
 
 - season:
 

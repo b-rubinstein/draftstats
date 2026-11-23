@@ -1,7 +1,8 @@
 # NBA Draft Data and Career Per-Game Statistics
 
-A dataset of NBA data from 1989 to 2021, with one row per drafted player
-and their career per-game statistics.
+A dataset of NBA draft picks from 1989 to 2021, with one row per drafted
+player and their career per-game statistics. Players with no recorded
+games played in have 'NA' statistics.
 
 ## Usage
 
@@ -17,9 +18,9 @@ nba_draft
 
   Player's name
 
-- team_abbreviation:
+- team:
 
-  Team that drafted the player
+  Team that drafted the player (abbreviation)
 
 - college:
 
