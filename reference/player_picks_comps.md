@@ -31,9 +31,12 @@ player_picks_comps(data, player_name, measure, window = 5)
 
 ## Value
 
-A dataframe with the selected player's statistic and average and median
-values of those in the selected comparison range, and the differences
-between them
+A dataframe with columns: \`Player\`, \`Range\`, \`Measure\`,
+\`Player_stat\`, \`Avg\`, \`Median\`, \`Diff_Avg\`, and \`Diff_Median\`.
+\`Range\` is the range of picks used for comparison, \`Player_stat\` is
+the player's average on the measure, \`Avg\` and \`Median\` are values
+of those in the selected comparison range, and \`Diff_Avg\` and
+\`Diff_Median\` are the player value minus the range value.
 
 ## Examples
 

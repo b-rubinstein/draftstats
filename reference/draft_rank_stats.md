@@ -29,8 +29,10 @@ draft_rank_stats(data, min_pick, max_pick, measure)
 
 ## Value
 
-A dataframe with the total number of players in the given range, along
-with the Average and Median statistic for those players
+A dataframe with the columns: \`Num_Players\`, \`Measure\`, \`Avg\`, and
+\`Median\`. \`Num_Players\` counts the players in the given range
+including those with NA statistics, \`Avg\` and \`Median\` will ignore
+those players in their calculations.
 
 ## Examples
 

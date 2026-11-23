@@ -1,9 +1,9 @@
 # NBA Player Statistics and Draft Data
 
-A dataset of NBA player statistics from the 1996-97 to to 2022-23
-seasons, containing demographic information, draft information, and NBA
-season statistics. There is one row per player, per year they were
-active in the NBA. Undrafted players draft_number is listed as 'NA'.
+A dataset of NBA player statistics from the 1996-97 to 2022-23 seasons,
+containing demographic information, draft information, and NBA season
+statistics. There is one row per player, per year they were active in
+the NBA. Undrafted players have 'NA' as draft_number.
 
 ## Usage
 
@@ -45,7 +45,7 @@ nba_players
 
 - draft_year:
 
-  Year player was drafted
+  Year player was in the draft
 
 - draft_round:
 

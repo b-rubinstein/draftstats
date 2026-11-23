@@ -46,7 +46,9 @@
 
 
 <dl><dt id="arg-data">data<a class="anchor" aria-label="anchor" href="#arg-data"></a></dt>
-<dd><p>A dataframe containing a player's performance across multiple seasons (nba_players)</p></dd>
+<dd><p>A dataframe containing a player's performance across multiple seasons.
+Columns must include the player's name, season, draft year, draft number,
+and measure, with one row per player season (for example, nba_players)</p></dd>
 
 
 <dt id="arg-player-name">player_name<a class="anchor" aria-label="anchor" href="#arg-player-name"></a></dt>
@@ -67,9 +69,10 @@
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A dataframe with the selected player's statistic from the first season,
-second season, and difference between them (season 2 - season 1), as well as what year the player
-was originally drafted</p>
+    <p>A dataframe with the columns: `Player`, `Draft_Year`, `Seasons`, `Measure`,
+`Season1_value`, `Season2_value`, `Difference`. `Draft_Year` is the year the player
+was drafted, `Seasons` shows the two seasons compared,
+and `Difference` is the second season's value minus the first season's.</p>
     </div>
 
     <div class="section level2">

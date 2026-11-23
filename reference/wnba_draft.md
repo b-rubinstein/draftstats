@@ -1,8 +1,8 @@
 # WNBA Draft Data and Career Per-Game Statistics
 
 A dataset of WNBA draft picks from 1997 to 2022, with one row per
-drafted player and their career per-game statistics.Players with no
-recorded games played in have 'NA' statistics.
+drafted player and their career per-game statistics. Players with no
+recorded games have 'NA' statistics.
 
 ## Usage
 
