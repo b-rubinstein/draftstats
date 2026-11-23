@@ -1,9 +1,9 @@
 #' NBA Player Statistics and Draft Data
 #'
-#' A dataset of NBA player statistics from the 1996-97 to to 2022-23 seasons,
+#' A dataset of NBA player statistics from the 1996-97 to 2022-23 seasons,
 #'  containing demographic information, draft information, and NBA season statistics.
 #'  There is one row per player, per year they were active in the NBA. Undrafted players
-#'  draft_number is listed as 'NA'.
+#'  have 'NA' as draft_number.
 #'
 #' @format ## `nba_players`
 #' A data frame with 12,844 rows and 21 columns:
@@ -15,7 +15,7 @@
 #'   \item{player_weight}{Weight of player (kg)}
 #'   \item{college}{Name of college player attended}
 #'   \item{country}{Country player was born in}
-#'   \item{draft_year}{Year player was drafted}
+#'   \item{draft_year}{Year player was in the draft}
 #'   \item{draft_round}{Draft round player was picked, NA if undrafted}
 #'   \item{draft_number}{Overall number player was drafted, NA if undrafted}
 #'   \item{gp}{Number of games played throughout the season}
@@ -36,7 +36,7 @@
 #' NBA Draft Data and Career Per-Game Statistics
 #'
 #' A dataset of NBA draft picks from 1989 to 2021, with one row per drafted player and their
-#' career per-game statistics. Players with no recorded games played in have 'NA' statistics.
+#' career per-game statistics. Players with no recorded games have 'NA' statistics.
 #'
 #' @format ## `nba_draft`
 #' A data frame with 1,922 rows and 9 columns:
@@ -57,7 +57,7 @@
 #' WNBA Draft Data and Career Per-Game Statistics
 #'
 #' A dataset of WNBA draft picks from 1997 to 2022, with one row per drafted player and their
-#' career per-game statistics.Players with no recorded games played in have 'NA' statistics.
+#' career per-game statistics. Players with no recorded games have 'NA' statistics.
 #'
 #' @format ## `wnba_draft`
 #' A data frame with 1,064 rows and 9 columns:

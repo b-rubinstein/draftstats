@@ -1,7 +1,9 @@
 
 #' Comparing a player's performance between two seasons
 #'
-#' @param data A dataframe containing a player's performance across multiple seasons (nba_players)
+#' @param data A dataframe containing a player's performance across multiple seasons.
+#'  Columns must include the player's name, season, draft year, draft number,
+#'  and measure, with one row per player season (for example, nba_players)
 #' @param player_name Name of the player
 #' @param season1 First season, in format "2000-01"
 #' @param season2 Second season, in format "2000-01"
@@ -53,7 +55,7 @@ player_year_comps <- function(data, player_name, season1, season2, measure) {
 
   draft_year <- unique(player_df$draft_year)
 
-  if(length(draft_year) >1){
+  if(length(draft_year) >1 || length(draft_number)>1){
     stop("multiple players with that name")
   }
 
