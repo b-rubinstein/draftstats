@@ -9,7 +9,7 @@
 A data frame with 1,064 rows and 9 columns:
 \describe{
   \item{player_name}{Player's name}
-  \item{team_abbreviation}{Team that drafted the player}
+  \item{team}{Team that drafted the player (full name)}
   \item{college}{Name of college player attended}
   \item{draft_year}{Year player was drafted}
   \item{draft_number}{Overall number player was drafted}
@@ -26,7 +26,7 @@ A data frame with 1,064 rows and 9 columns:
 wnba_draft
 }
 \description{
-A dataset of WNBA data from 1997 to 2022, with one row per drafted player and their
-career per-game statistics.
+A dataset of WNBA draft picks from 1997 to 2022, with one row per drafted player and their
+career per-game statistics.Players with no recorded games played in have 'NA' statistics.
 }
 \keyword{datasets}

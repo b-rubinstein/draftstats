@@ -23,8 +23,8 @@ player_year_comps <- function(data, player_name, season1, season2, measure) {
   }
 
   if(!"draft_year" %in% names(data) || !"player_name" %in% names(data) ||
-     !"season" %in% names(data)){
-    stop("data must contain a player_name, draft_year, and season column")
+     !"season" %in% names(data) || !"draft_number" %in% names(data)){
+    stop("data must contain a player_name, draft_year, draft_number, and season column")
   }
 
   if(!measure %in% names(data)){
@@ -45,11 +45,13 @@ player_year_comps <- function(data, player_name, season1, season2, measure) {
     stop("player not found in data")
   }
 
-  draft_year <- unique(player_df$draft_year)
+  draft_number <- unique(player_df$draft_number)
 
-  if(any(is.na(draft_year))){
+  if(any(is.na(draft_number))){
     stop("player was not drafted")
   }
+
+  draft_year <- unique(player_df$draft_year)
 
   if(length(draft_year) >1){
     stop("multiple players with that name")
