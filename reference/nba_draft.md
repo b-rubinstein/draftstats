@@ -18,7 +18,7 @@ nba_draft
 
   Player's name
 
-- team:
+- team_abbreviation:
 
   Team that drafted the player (abbreviation)
 
