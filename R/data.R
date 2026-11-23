@@ -42,7 +42,7 @@
 #' A data frame with 1,922 rows and 9 columns:
 #' \describe{
 #'   \item{player_name}{Player's name}
-#'   \item{team}{Team that drafted the player (abbreviation)}
+#'   \item{team_abbreviation}{Team that drafted the player (abbreviation)}
 #'   \item{college}{Name of college player attended}
 #'   \item{draft_year}{Year player was drafted}
 #'   \item{draft_number}{Overall number player was drafted}
@@ -63,7 +63,7 @@
 #' A data frame with 1,064 rows and 9 columns:
 #' \describe{
 #'   \item{player_name}{Player's name}
-#'   \item{team}{Team that drafted the player (full name)}
+#'   \item{team_abbreviation}{Team that drafted the player (full name)}
 #'   \item{college}{Name of college player attended}
 #'   \item{draft_year}{Year player was drafted}
 #'   \item{draft_number}{Overall number player was drafted}
