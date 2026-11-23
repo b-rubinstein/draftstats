@@ -20,8 +20,10 @@ draft_rank_comps(data, min_pick1, max_pick1, min_pick2, max_pick2, measure)
 \item{measure}{Statistics measure (points, rebounds, minutes, assists, etc) to compare}
 }
 \value{
-A dataframe with the Average and Median statistic for all players in each given draft range and
- the difference between them
+A dataframe with the columns: `Range`, `Measure`, `Avg`, `Median`, `Diff_Avg`,
+and `Diff_Median`, where `Avg` and `Median` list the values for each of the two
+given ranges, and the Difference columns calculate the difference between them (first range
+minus second range).
 }
 \description{
 Comparing a specific measure of performance between two draft ranges by calling draft_rank_stats function

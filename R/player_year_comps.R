@@ -9,9 +9,10 @@
 #' @param season2 Second season, in format "2000-01"
 #' @param measure Statistics measure (points, rebounds, minutes, assists, etc) to compare
 #'
-#' @returns A dataframe with the selected player's statistic from the first season,
-#' second season, and difference between them (season 2 - season 1), as well as what year the player
-#' was originally drafted
+#' @returns A dataframe with the columns: `Player`, `Draft_Year`, `Seasons`, `Measure`,
+#' `Season1_value`, `Season2_value`, `Difference`. `Draft_Year` is the year the player
+#' was drafted, `Seasons` shows the two seasons compared,
+#' and `Difference` is the second season's value minus the first season's.
 #'
 #' @examples
 #' player_year_comps(nba_players, "Jalen Brunson", "2019-20", "2021-22", "pts")

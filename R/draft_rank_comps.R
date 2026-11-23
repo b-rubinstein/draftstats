@@ -8,8 +8,11 @@
 #' @param max_pick2 Highest pick number to include in range 2
 #' @param measure Statistics measure (points, rebounds, minutes, assists, etc) to compare
 #'
-#' @returns A dataframe with the Average and Median statistic for all players in each given draft range and
-#'  the difference between them
+#' @returns A dataframe with the columns: `Range`, `Measure`, `Avg`, `Median`, `Diff_Avg`,
+#' and `Diff_Median`, where `Avg` and `Median` list the values for each of the two
+#' given ranges, and the Difference columns calculate the difference between them (first range
+#' minus second range).
+#'
 #'
 #' @examples
 #' draft_rank_comps(nba_players, 1, 10, 11, 20, "pts")

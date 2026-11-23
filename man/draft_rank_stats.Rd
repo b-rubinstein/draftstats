@@ -16,8 +16,10 @@ draft_rank_stats(data, min_pick, max_pick, measure)
 \item{measure}{Statistics measure (points, rebounds, minutes, assists, etc)}
 }
 \value{
-A dataframe with the total number of players in the given range,
-along with the Average and Median statistic for those players
+A dataframe with the columns: `Num_Players`, `Measure`, `Avg`,
+and `Median`. `Num_Players` counts the players in the given range including
+those with NA statistics, `Avg` and `Median` will ignore those players in
+their calculations.
 }
 \description{
 Summarizing a specific measure of performance for all players in a given draft range

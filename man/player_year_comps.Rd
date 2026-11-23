@@ -7,7 +7,9 @@
 player_year_comps(data, player_name, season1, season2, measure)
 }
 \arguments{
-\item{data}{A dataframe containing a player's performance across multiple seasons (nba_players)}
+\item{data}{A dataframe containing a player's performance across multiple seasons.
+Columns must include the player's name, season, draft year, draft number,
+and measure, with one row per player season (for example, nba_players)}
 
 \item{player_name}{Name of the player}
 
@@ -18,9 +20,10 @@ player_year_comps(data, player_name, season1, season2, measure)
 \item{measure}{Statistics measure (points, rebounds, minutes, assists, etc) to compare}
 }
 \value{
-A dataframe with the selected player's statistic from the first season,
-second season, and difference between them (season 2 - season 1), as well as what year the player
-was originally drafted
+A dataframe with the columns: `Player`, `Draft_Year`, `Seasons`, `Measure`,
+`Season1_value`, `Season2_value`, `Difference`. `Draft_Year` is the year the player
+was drafted, `Seasons` shows the two seasons compared,
+and `Difference` is the second season's value minus the first season's.
 }
 \description{
 Comparing a player's performance between two seasons

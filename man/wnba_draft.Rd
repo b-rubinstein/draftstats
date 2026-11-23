@@ -27,6 +27,6 @@ wnba_draft
 }
 \description{
 A dataset of WNBA draft picks from 1997 to 2022, with one row per drafted player and their
-career per-game statistics.Players with no recorded games played in have 'NA' statistics.
+career per-game statistics. Players with no recorded games have 'NA' statistics.
 }
 \keyword{datasets}

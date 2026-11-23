@@ -15,7 +15,7 @@ A data frame with 12,844 rows and 21 columns:
   \item{player_weight}{Weight of player (kg)}
   \item{college}{Name of college player attended}
   \item{country}{Country player was born in}
-  \item{draft_year}{Year player was drafted}
+  \item{draft_year}{Year player was in the draft}
   \item{draft_round}{Draft round player was picked, NA if undrafted}
   \item{draft_number}{Overall number player was drafted, NA if undrafted}
   \item{gp}{Number of games played throughout the season}
@@ -38,9 +38,9 @@ A data frame with 12,844 rows and 21 columns:
 nba_players
 }
 \description{
-A dataset of NBA player statistics from the 1996-97 to to 2022-23 seasons,
+A dataset of NBA player statistics from the 1996-97 to 2022-23 seasons,
  containing demographic information, draft information, and NBA season statistics.
  There is one row per player, per year they were active in the NBA. Undrafted players
- draft_number is listed as 'NA'.
+ have 'NA' as draft_number.
 }
 \keyword{datasets}

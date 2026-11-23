@@ -27,6 +27,6 @@ nba_draft
 }
 \description{
 A dataset of NBA draft picks from 1989 to 2021, with one row per drafted player and their
-career per-game statistics. Players with no recorded games played in have 'NA' statistics.
+career per-game statistics. Players with no recorded games have 'NA' statistics.
 }
 \keyword{datasets}
