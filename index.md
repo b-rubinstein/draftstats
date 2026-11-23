@@ -63,8 +63,10 @@ seasons.
 
 ## Basic Usage:
 
-The nba_players, nba_draft, and wnba_draft datasets are included with
-the package, so calling library(draftstats) is sufficient.
+The `nba_players`, `nba_draft`, and `wnba_draft` datasets are included
+with the package, so calling
+[`library(draftstats)`](https://github.com/b-rubinstein/draftstats) is
+sufficient.
 
 Example function uses:
 
