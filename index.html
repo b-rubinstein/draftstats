@@ -31,6 +31,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -48,7 +49,7 @@
 <div class="page-header"><h1 id="draftstats">draftstats<a class="anchor" aria-label="anchor" href="#draftstats"></a>
 </h1></div>
 <p>draftstats is a tool to analyze whether an NBA or WNBA player’s draft position is reflective of their performance throughout their career in the league. This package allows one to summarize and compare player performance across different draft-pick ranges, compare a player to others drafted near them, and compare a player to themselves across different seasons, using real data from the NBA and WNBA.</p>
-<p>Documentation: <a href="https://github.com/b-rubinstein/draftstats" class="external-link uri">https://github.com/b-rubinstein/draftstats</a></p>
+<p>Documentation: <a href="https://b-rubinstein.github.io/draftstats/" class="uri">https://b-rubinstein.github.io/draftstats/</a></p>
 <div class="section level2">
 <h2 id="installation">Installation:<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -63,17 +64,17 @@
 <div class="section level3">
 <h3 id="datasets">Datasets:<a class="anchor" aria-label="anchor" href="#datasets"></a>
 </h3>
-<p>nba_players is a dataset adapted from Kaggle containing player information from the 1996-97 to 2022-23 NBA seasons. This includes draft rankings, personal details, and NBA box-score statistics. There are 12,844 player rows, with one row per player season.</p>
-<p>nba_draft is a dataset adapted from Kaggle containing NBA draft data from 1989 to 2021. There are 1,922 rows with one row per player and their career per-game statistics.</p>
-<p>wnba_draft is a dataset adapted from Kaggle containing WNBA draft data from 1997 to 2022. There are 1,064 rows with one row per player and their career per-game statistics.</p>
+<p><code>nba_players</code> is a dataset adapted from Kaggle containing player information from the 1996-97 to 2022-23 NBA seasons. This includes draft rankings, personal details, and NBA box-score statistics. There are 12,844 player rows, with one row per player season.</p>
+<p><code>nba_draft</code> is a dataset adapted from Kaggle containing NBA draft data from 1989 to 2021. There are 1,922 rows with one row per player and their career per-game statistics.</p>
+<p><code>wnba_draft</code> is a dataset adapted from Kaggle containing WNBA draft data from 1997 to 2022. There are 1,064 rows with one row per player and their career per-game statistics.</p>
 </div>
 <div class="section level3">
 <h3 id="functions">Functions:<a class="anchor" aria-label="anchor" href="#functions"></a>
 </h3>
-<p>draft_rank_stats() is a function that takes in four items: a dataset, a minimum number and maximum number (representing draft picks), and a metric. This function will calculate the average and median value of the chosen performance metric for all players within the specified range.</p>
-<p>draft_rank_comps() is a function that takes in a dataset, two ranges, and a performance metric. It compares the average and median values between the two different draft pick ranges, by calling draft_rank_stats(), and returns the difference between them.</p>
-<p>player_picks_comps() is a function that takes in a dataset, a player’s name, a performance metric, and an optional window (default = 5). It will compare the player’s statistic to the average of those who were picked within the given window.</p>
-<p>player_year_comps() is a function that takes in a dataset with a similar style to <code>nba_players</code>, a player’s name, two seasons, and a measure. This function will compare a player’s performance between the two given seasons.</p>
+<p><code><a href="reference/draft_rank_stats.html">draft_rank_stats()</a></code> is a function that takes in four items: a dataset, a minimum number and maximum number (representing draft picks), and a metric. This function will calculate the average and median value of the chosen performance metric for all players within the specified range.</p>
+<p><code><a href="reference/draft_rank_comps.html">draft_rank_comps()</a></code> is a function that takes in a dataset, two ranges, and a performance metric. It compares the average and median values between the two different draft pick ranges, by calling draft_rank_stats(), and returns the difference between them.</p>
+<p><code><a href="reference/player_picks_comps.html">player_picks_comps()</a></code> is a function that takes in a dataset, a player’s name, a performance metric, and an optional window (default = 5). It will compare the player’s statistic to the average of those who were picked within the given window.</p>
+<p><code><a href="reference/player_year_comps.html">player_year_comps()</a></code> is a function that takes in a dataset with a similar style to <code>nba_players</code>, a player’s name, two seasons, and a measure. This function will compare a player’s performance between the two given seasons.</p>
 </div>
 </div>
 <div class="section level2">

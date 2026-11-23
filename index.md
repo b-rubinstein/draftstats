@@ -7,7 +7,7 @@ performance across different draft-pick ranges, compare a player to
 others drafted near them, and compare a player to themselves across
 different seasons, using real data from the NBA and WNBA.
 
-Documentation: <https://github.com/b-rubinstein/draftstats>
+Documentation: <https://b-rubinstein.github.io/draftstats/>
 
 ## Installation:
 
@@ -22,39 +22,43 @@ library(draftstats)
 
 ### Datasets:
 
-nba_players is a dataset adapted from Kaggle containing player
+`nba_players` is a dataset adapted from Kaggle containing player
 information from the 1996-97 to 2022-23 NBA seasons. This includes draft
 rankings, personal details, and NBA box-score statistics. There are
 12,844 player rows, with one row per player season.
 
-nba_draft is a dataset adapted from Kaggle containing NBA draft data
+`nba_draft` is a dataset adapted from Kaggle containing NBA draft data
 from 1989 to 2021. There are 1,922 rows with one row per player and
 their career per-game statistics.
 
-wnba_draft is a dataset adapted from Kaggle containing WNBA draft data
+`wnba_draft` is a dataset adapted from Kaggle containing WNBA draft data
 from 1997 to 2022. There are 1,064 rows with one row per player and
 their career per-game statistics.
 
 ### Functions:
 
-draft_rank_stats() is a function that takes in four items: a dataset, a
-minimum number and maximum number (representing draft picks), and a
-metric. This function will calculate the average and median value of the
-chosen performance metric for all players within the specified range.
+[`draft_rank_stats()`](https://b-rubinstein.github.io/draftstats/reference/draft_rank_stats.md)
+is a function that takes in four items: a dataset, a minimum number and
+maximum number (representing draft picks), and a metric. This function
+will calculate the average and median value of the chosen performance
+metric for all players within the specified range.
 
-draft_rank_comps() is a function that takes in a dataset, two ranges,
-and a performance metric. It compares the average and median values
-between the two different draft pick ranges, by calling
-draft_rank_stats(), and returns the difference between them.
+[`draft_rank_comps()`](https://b-rubinstein.github.io/draftstats/reference/draft_rank_comps.md)
+is a function that takes in a dataset, two ranges, and a performance
+metric. It compares the average and median values between the two
+different draft pick ranges, by calling draft_rank_stats(), and returns
+the difference between them.
 
-player_picks_comps() is a function that takes in a dataset, a player’s
-name, a performance metric, and an optional window (default = 5). It
-will compare the player’s statistic to the average of those who were
-picked within the given window.
+[`player_picks_comps()`](https://b-rubinstein.github.io/draftstats/reference/player_picks_comps.md)
+is a function that takes in a dataset, a player’s name, a performance
+metric, and an optional window (default = 5). It will compare the
+player’s statistic to the average of those who were picked within the
+given window.
 
-player_year_comps() is a function that takes in a dataset with a similar
-style to `nba_players`, a player’s name, two seasons, and a measure.
-This function will compare a player’s performance between the two given
+[`player_year_comps()`](https://b-rubinstein.github.io/draftstats/reference/player_year_comps.md)
+is a function that takes in a dataset with a similar style to
+`nba_players`, a player’s name, two seasons, and a measure. This
+function will compare a player’s performance between the two given
 seasons.
 
 ## Basic Usage:
