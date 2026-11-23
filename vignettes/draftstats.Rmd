@@ -1,0 +1,19 @@
+---
+title: "Worked Example with draftstats"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Worked Example with draftstats}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(draftstats)
+```
